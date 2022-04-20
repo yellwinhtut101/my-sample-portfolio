@@ -1,0 +1,49 @@
+.navigation {
+     
+
+     &__nav {
+          bottom: 0;
+          left: 0;
+          height: 50px;
+          text-align: left;
+          position: absolute;
+          width: 100%;
+          background-color: #555;
+          border-bottom: 3px solid #04c2c9;
+          z-index: 99;
+
+     }
+
+     &__list{
+         text-decoration: none;
+         list-style: none;
+         width: 100%;
+
+     }
+
+     &__item {
+          font-size: 2rem;
+          padding: 1.2rem;
+
+          // text-decoration: none;
+          float: left;
+     }
+
+     &__link {
+          color: white;
+          display: inline-block;
+          font-size: 2rem;
+          font-weight: 300;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover,
+          &:active {
+               background-position: 100%;
+               background-color: rgb(8, 204, 122);
+          }
+     }
+
+     
+
+}
