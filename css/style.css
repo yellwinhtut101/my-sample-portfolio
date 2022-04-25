@@ -110,6 +110,12 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -139,6 +145,33 @@ body {
   .btn--white::after {
     background-color: #fff; }
   .btn--white:hover {
+    background-color: #08cc7a; }
+
+.btn--blue {
+  background-color: #fff;
+  color: #777; }
+  .btn--blue::after {
+    background-color: #fff; }
+  .btn--blue:hover {
+    color: #fff;
+    background-color: #5643fa; }
+
+.btn--pink {
+  background-color: #fff;
+  color: #777; }
+  .btn--pink::after {
+    background-color: #fff; }
+  .btn--pink:hover {
+    color: #fff;
+    background-color: #9f1d35; }
+
+.btn--green {
+  background-color: #fff;
+  color: #777; }
+  .btn--green::after {
+    background-color: #fff; }
+  .btn--green:hover {
+    color: #fff;
     background-color: #08cc7a; }
 
 .btn::after {
@@ -176,6 +209,74 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 46rem; }
+  .card__side {
+    height: 46rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #9f1d35, #ff1493); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #08cc7a, #28b485); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    height: 23rem;
+    background-size: cover;
+    background-blend-mode: screen;
+    --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: url(../img/onepage.png); }
+    .card__picture--2 {
+      background-image: url(../img/tindog.png); }
+    .card__picture--3 {
+      background-image: url(../img/starbuks.png); }
+  .card__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin-top: 6rem; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    --webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(159, 29, 53, 0.85), rgba(255, 20, 147, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(8, 204, 122, 0.85), rgba(40, 180, 133, 0.85)); }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -187,7 +288,7 @@ body {
     outline-offset: 2rem; }
     .composition__photo--p1 {
       left: 30%;
-      top: 0;
+      top: 2rem;
       animation: moveInRight 2s ease-in; }
     .composition__photo:hover {
       outline: 1.5rem solid #708090;
@@ -196,6 +297,94 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  margin-bottom: -3rem; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block; }
+    .feature-box__icon--html {
+      background-image: linear-gradient(to right, #e34c26, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--css {
+      background-image: linear-gradient(to right, #264de4, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--js {
+      background-image: linear-gradient(to right, #f0db4f, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--bootstrap {
+      background-image: linear-gradient(to right, #563d7c, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--sass {
+      background-image: linear-gradient(to right, #cc6699, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--react {
+      background-image: linear-gradient(to right, #61DBFB, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--vuejs {
+      background-image: linear-gradient(to right, #42b883, #35495e);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--node {
+      background-image: linear-gradient(to right, #68a063, #3c873a);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--python {
+      background-image: linear-gradient(to right bottom, #306998, #FFD43B);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--golang {
+      background-image: linear-gradient(to right, #29BEB0, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--aws {
+      background-image: linear-gradient(to right, #FF9900, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--docker {
+      background-image: linear-gradient(to right, #0db7ed, #384d54);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--git {
+      background-image: linear-gradient(to right, #f34f29, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--github {
+      background-image: linear-gradient(to right, #171515, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--gitlab {
+      background-image: linear-gradient(to right, #e24329, #fc6d26);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--redhat {
+      background-image: linear-gradient(to right, #e5141f, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--ubuntu {
+      background-image: linear-gradient(to right, #E95420, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .feature-box__icon--windows {
+      background-image: linear-gradient(to right, #00a4ef, #777);
+      -webkit-background-clip: text;
+      color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
 
 .header {
   height: 95vh;
@@ -211,6 +400,26 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    display: inline;
+    text-align: center;
+    margin-bottom: 8rem;
+    width: 15rem;
+    height: 20rem;
+    margin: 0 1.5rem; }
+  .footer__social {
+    font-size: 2.5rem;
+    display: inline-block; }
+    .footer__social:not(:last-child) {
+      margin-right: 3.5rem; }
+    .footer__social--link:link, .footer__social--link:visited {
+      color: #999;
+      text-decoration: none; }
 
 .row {
   max-width: 114rem;
@@ -274,3 +483,18 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(112, 128, 144, 0.8), rgba(47, 79, 79, 0.8)), url(../img/siarhei.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-projects {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+  margin-bottom: -28rem; }

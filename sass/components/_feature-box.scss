@@ -1,0 +1,132 @@
+.feature-box {
+     background-color: rgba($color-white, .8);
+     font-size: 1.5rem;
+     padding: 2.5rem;
+     text-align: center;
+     border-radius: 3px;
+     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+     transition: transform .3s;
+     margin-bottom: -3rem;
+
+     &__icon {
+          font-size: 6rem;
+          margin-bottom: .5rem;
+          display: inline-block;
+          
+
+          &--html {
+               background-image: linear-gradient(to right, #e34c26 , $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--css {
+               background-image: linear-gradient(to right, #264de4, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--js {
+               background-image: linear-gradient(to right, #f0db4f, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--bootstrap {
+               background-image: linear-gradient(to right, #563d7c, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--sass {
+               background-image: linear-gradient(to right, #cc6699, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--react {
+               background-image: linear-gradient(to right,  #61DBFB, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--vuejs {
+               background-image: linear-gradient(to right,  #42b883, #35495e);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--node {
+               background-image: linear-gradient(to right, 	#68a063, #3c873a);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--python {
+               background-image: linear-gradient(to right bottom,   #306998, #FFD43B);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--golang {
+               background-image: linear-gradient(to right, 	#29BEB0, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--aws {
+               background-image: linear-gradient(to right, 	#FF9900,  $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--docker {
+               background-image: linear-gradient(to right, 	#0db7ed, #384d54);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--git {
+               background-image: linear-gradient(to right, 	#f34f29, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--github {
+               background-image: linear-gradient(to right, 	 #171515, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--gitlab {
+               background-image: linear-gradient(to right, 	#e24329, #fc6d26);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--redhat {
+               background-image: linear-gradient(to right, 	#e5141f, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--ubuntu {
+               background-image: linear-gradient(to right, 	#E95420, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+          &--windows {
+               background-image: linear-gradient(to right, 	#00a4ef, $color-grey-dark);
+               -webkit-background-clip: text;
+               color: transparent;
+          }
+
+
+     }
+
+     &:hover {
+          transform: translateY(-1.5rem) scale(1.03);
+     }
+
+}
