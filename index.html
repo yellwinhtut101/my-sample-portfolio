@@ -14,6 +14,26 @@
 </head>
 <body>
      
+     <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
+
+          <label for="navi-toogle" class="navigation__button">
+               <span class="navigation__icon">&nbsp;</span>
+          </label>
+
+          <div class="navigation__background">&nbsp;</div>
+
+          <nav class="navigation__nav">
+               <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Skills</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Projects</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact</a></li>
+               </ul>
+          </nav>
+     </div>
+
      <header class="header">
 
           <div class="header__text-box">
@@ -26,16 +46,6 @@
           </div>
                   
      </header>
-     <!-- <div class="navigation">
-        <nav class="navigation__nav">
-             <ul class="navigation__list">
-                  <li class="navigation__item"><a href="#" class="navigation__link">Home</a> </li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">Projects</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
-             </ul>
-        </nav>           
-     </div> -->
 
      <main>
           <section class="section-about">
@@ -52,7 +62,7 @@
                               Front-End Developer with a proven ability to collaborate with my team. I have always been passionate about web development. I'm dedicated to creating and maintaining easy-to-use, user-friendly websites, and applications.
                          </p>
                          <p class="paragraph">
-                              I'm currently working as a freelancer at <span class="heading__text--color">Upwork</span>focusing on JavaScript mobile-first development and expanding my JavaScript knowledge into perfecting accessibility and responsive design.
+                              I'm currently working as a freelancer at <span class="heading__text--color">Upwork</span> focusing on JavaScript mobile-first development and expanding my JavaScript knowledge into perfecting accessibility and responsive design.
                          </p>
                          <p class="paragraph">
                               I'm also work as a Linux System Administrator freelancer at <span class="heading__text--color">Upwork</span>. I also have a strong experience with system/server administration, troubleshooting and diagnostic.
@@ -161,7 +171,7 @@
           <section class="section-projects">
                <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                         <span class="heading__text--color">Projects</span> 
+                         <span class="heading__text--color">Projects</span>
                     </h2>
                </div>
 
@@ -235,31 +245,73 @@
                     </div>
                </div>
           </section>
+
+          <section class="section-contact">
+               <div class="row">
+                    <div class="u-center-text u-margin-bottom-big">
+                         <h2 class="heading-secondary">
+                              <span class="heading__text--color">Contact</span>
+                         </h2>
+                    </div>
+                    <div class="contact">
+                         <div class="contact__form">
+                              <div class="u-center-text u-margin-bottom-medium">
+                                   <h2 class="heading-contact">
+                                        <span class="heading__text--color">Have a question or want to work together?</span>
+                                   </h2>
+                              </div>
+                              <div class="contact__form--body">
+                                   <form action="#" class="form">
+                                        <div class="form__group">
+                                             <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                             <label for="name" class="form__label">Full name</label>
+                                        </div>
+     
+                                        <div class="form__group">
+                                             <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                             <label for="email" class="form__label">Email address</label>
+                                        </div>
+     
+                                        <div class="form__group">
+                                             <textarea type="textarea" cols="30" rows="10" placeholder="Your message" class="form__textarea" id="textarea" required></textarea>
+                                             <label for="textarea" class="form__label">Your message</label>
+                                        </div>
+
+                                        <div class="form__group">
+                                             <button class="btn btn--green">Submit</button>
+                                        </div>
+                                   </form>
+                              </div>
+                              
+                         </div>
+                    </div>
+               </div>
+          </section>
      </main>
      
      <footer class="footer">
-          <div class="footer__logo-box">
-               <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                         <span class="heading__text--color">Contact Me</span> 
-                    </h2>
-               </div>
-     
-          </div>
 
           <div class="row">
-               <div class="col-1-of-2">
-                    <div class="footer__social">
-                         <a href="#" class="footer__social--link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                         <a href="#" class="footer__social--link"><ion-icon name="logo-twitter"></ion-icon></a>
-                         <a href="#" class="footer__social--link"><ion-icon name="logo-github"></ion-icon></a>
-                         <a href="#" class="footer__social--link"><ion-icon name="logo-gitlab"></ion-icon></a>
-                    </div>
+               
+               <div class="footer__social">
+                    <ul class="footer__list">
+                         <li class="footer__item"><a href="#" class="footer__link"><ion-icon class="footer__link--linkedin" name="logo-linkedin"></ion-icon></a></li>
+                         <li class="footer__item"><a href="#" class="footer__link"><ion-icon class="footer__link--twitter" name="logo-twitter"></ion-icon></a></li>
+                         <li class="footer__item"><a href="#" class="footer__link"><ion-icon class="footer__link--facebook" name="logo-facebook"></ion-icon></a></li>
+                         <li class="footer__item"><a href="#" class="footer__link"><ion-icon class="footer__link--github" name="logo-github"></ion-icon></a></li>
+                    </ul>  
                </div>
 
-               <div class="col-1-of-2">
-
+               <div class="footer__copyright">
+                    <p class="footer__copyright u-margin-bottom-medium">
+                         <a href="#" class="footer__copyright--link">Ye Win Htut</a><span class="footer__copyright--link">&copy;</span><a href="#" class="footer__copyright--link">2022</a>
+                    </p>
                </div>
+               
+
+               
+
+               
           </div>
           
           
