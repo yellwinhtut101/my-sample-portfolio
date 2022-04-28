@@ -10,10 +10,21 @@
           // transition: all .2s
           outline-offset: 2rem;
 
+          @include respond(tab-port) {
+               float: left;
+               position: relative;
+               width: 50%;
+               box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+          }
+
           &--p1 {
                left: 30%;
                top: 2rem;
                animation: moveInRight 2s ease-in;
+
+               @include respond(tab-port) {
+                    top: 0;
+               }
           }
 
           &:hover {

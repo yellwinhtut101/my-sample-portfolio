@@ -8,10 +8,18 @@
      transition: transform .3s;
      margin-bottom: -3rem;
 
+     @include respond(tab-port) {
+          padding: 2rem;
+     }
+
      &__icon {
           font-size: 6rem;
           margin-bottom: .5rem;
           display: inline-block;
+
+          @include respond(tab-port) {
+               margin-bottom: 0;
+          }
           
 
           &--html {
