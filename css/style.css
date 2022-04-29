@@ -388,7 +388,8 @@ body {
       animation: moveInRight 2s ease-in; }
       @media (max-width: 56.25rem) {
         .composition__photo--p1 {
-          top: 0; } }
+          top: 0;
+          left: 25%; } }
     .composition__photo:hover {
       outline: 1.5rem solid #708090;
       transform: scale(1.05);
