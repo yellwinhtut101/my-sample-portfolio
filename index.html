@@ -11,6 +11,17 @@
      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
      <title>Ye Win Htut's Portfolio</title>
+
+     <script>
+          function hideMenu(){
+               let menuOpen = document.querySelector('#navi-toogle').checked;
+
+          if(menuOpen = true){
+               document.querySelector('#navi-toogle').checked = false;
+          }
+          }
+          window.addEventListener("scroll", hideMenu);
+     </script>
 </head>
 <body>
      
